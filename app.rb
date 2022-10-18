@@ -49,6 +49,19 @@ pizza_toppings.merge(more_toppings)
 
 numbers = [5,6,7,8,9,10,1,2,3,4]
 
-pp numbers.min
 
-pp numbers.sort[0]
+#enumerables in arrays
+
+upcased = ["enock", "mokua", "nyanchoga", "mr"].map.with_index do |e, index|
+  "#{e}, #{index}"
+end
+
+#enumerable in hashes
+
+book = { title: "The Hobbit", author: "J. R. R. Tolkien", published: 1937 }
+
+book.each do |key, value|
+  puts "key: #{key}, value: #{value}"
+
+end
+
