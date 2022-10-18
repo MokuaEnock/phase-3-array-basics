@@ -18,12 +18,37 @@ one_two_three = [1, 2, 3]
 four_five_six = [4, 5, 6]
 
 one_two_three.concat(four_five_six)
+#Write a function that will take the currentYear and yearOfBirth
+#As parameters, then returns the age of the user
+#You need to use the TDD approach:
+#   1. Test that the fuction returns a value of type Integer
+#   2. Test the currenYear and yearOfBirth passed by the user are of type integer
 
-pp one_two_three + four_five_six
+#Hashes in ruby
 
+my_hash = {key1:"value1",key2:"value2",key3:"value3"}
 
-puts one_two_three.include?(1)
+my_hash[:key2] = 42
 
-pp one_two_three.reverse!
+user = {
+  name: "Duane",
+  address: {
+    street: "123 Fake Street",
+    city: "Queens",
+    state: "NY"
+  }
+}
 
-pp one_two_three.sum
+pizza_toppings = { cheese: true, topping1: "mushroom", topping2: "sausage" }
+
+pizza_toppings.delete(:topping2)
+
+more_toppings = {topping3:"peppers", topping4:"onions"}
+
+pizza_toppings.merge(more_toppings)
+
+numbers = [5,6,7,8,9,10,1,2,3,4]
+
+pp numbers.min
+
+pp numbers.sort[0]
